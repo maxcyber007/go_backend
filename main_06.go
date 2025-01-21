@@ -21,9 +21,11 @@ func main() {
   //Employee API Method
   router.GET("/employee", EmployeeController.GetEmployee) //GET
   router.GET("/employee/:id", EmployeeController.GetEmployeeByID) //GET BY ID
-  router.GET("/employeedb", EmployeeController.GetEmployeeDB) //GET DB
+  router.GET("/employeedb", EmployeeController.GetEmployeeDB) //GET FROM DB
   router.POST("/employee", EmployeeController.PostEmployee) //POST
+  router.POST("/employeedb", EmployeeController.PostEmployeeDB) //POST TO DB
   router.PUT("/employee", EmployeeController.PutEmployee) //PUT
+  router.PUT("/employeedb", EmployeeController.PutEmployeeDB) //PUT DB
   router.DELETE("/employee", EmployeeController.DeleteEmployee) //DELETE
 
   //Customer API Method

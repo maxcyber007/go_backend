@@ -6,10 +6,10 @@ import (
 )
 
 func main() {
+
   router := gin.Default()
   //Employee API Method
   router.GET("/employee", EmployeeController.GetEmployee) //GET
-  router.GET("/employee/:id", EmployeeController.GetEmployeeByID) //GET BY ID
   router.POST("/employee", EmployeeController.PostEmployee) //POST
   router.PUT("/employee", EmployeeController.PutEmployee) //PUT
   router.DELETE("/employee", EmployeeController.DeleteEmployee) //DELETE
